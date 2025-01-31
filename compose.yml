@@ -1,0 +1,15 @@
+services:
+  srv-scrape-eu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cntrScrapeEU
+    tty: true
+    stdin_open: true
+    extra_hosts:
+          - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command: ["/bin/bash"]
