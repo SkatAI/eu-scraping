@@ -1,5 +1,9 @@
 # Extracting content from EU parliament debates
 
+content from pages like this one
+
+https://www.europarl.europa.eu/doceo/document/TA-9-2023-0236_EN.html
+
 
 2 scripts:
 

@@ -13,7 +13,7 @@ data/tmp
 *.xlsx
 *.pkl
 *.log
-*.zip
+# *.zip
 *.tar.gz
 
 # Ignored Python Files
