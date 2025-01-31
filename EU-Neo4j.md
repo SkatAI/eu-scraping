@@ -1,34 +1,36 @@
 # Neo4j EU
 
-structure
-
-Nodes:
-
-MEPs (Members of European Parliament)
-Debates (Sessions)
-Political Parties
+just a few notes on transforming the dataset into a graph network
 
 
-Relationships:
 
-MEPs BELONGS_TO Party
-MEPs SPEAKS_IN Debate
-MEPs FOLLOWS Other_MEP (if we want to track who speaks after whom)
+## Nodes:
 
+- MEPs (Members of European Parliament)
+- Debates (Sessions)
+- Political Parties
+
+
+## Relationships:
+
+- MEPs BELONGS_TO Party
+- MEPs SPEAKS_IN Debate
+- MEPs FOLLOWS Other_MEP (if we want to track who speaks after whom)
+
+
+## Steps
 
 Create a new database in Neo4j Desktop with a password
 
-
-Load JSON data into Python
-Clean and transform data:
-
-Extract debate dates from parent URLs
-Handle any special characters in names/text
-Create unique identifiers for debates
+- Load JSON data into Python
+- Clean and transform data:
+  - Extract debate dates from parent URLs
+  - Handle any special characters in names/text
+  - Create unique identifiers for debates
 
 
-Create nodes for MEPs, Parties, and Debates
+- Create nodes for MEPs, Parties, and Debates
 
-Create relationships between nodes
+- Create relationships between nodes
 
-Add properties (like speech text, timestamps)
+- Add properties (like speech text, timestamps)
